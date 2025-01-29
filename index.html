@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zebomba</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/slider.css">
+    <link rel="stylesheet" href="./src/css/modal.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <div class="map">
+            <div id="player" class="player">
+                <img src="./src/img/player.png" alt="">
+            </div>
+            <img src="./src/img/map.png" alt="">
+            <nav class="navigation">
+                <div class="slider-bg">
+                    <div class="slider-container">
+                        <div class="slider">
+                            <div class="slide isFriend addFriend"><img src="./src/img/slider/holdcontact.png" alt="Slide 1">
+                            </div>
+                            <div class="slide isFriend"><img src="./src/img/slider/holdcontact.png" alt="Slide 2">
+                            </div>
+                            <div class="slide isFriend"><img src="./src/img/slider/holdcontact.png" alt="Slide 3"></div>
+                            <div class="slide isFriend"><img src="./src/img/slider/holdcontact.png" alt="Slide 4"></div>
+                            <div class="slide"><img src="./src/img/slider/holdcontact.png" alt="Slide 5"></div>
+                            <div class="slide"><img src="./src/img/slider/holdcontact.png" alt="Slide 6"></div>
+                            <div class="slide"><img src="./src/img/slider/holdcontact.png" alt="Slide 7"></div>
+                            <div class="slide"><img src="./src/img/slider/holdcontact.png" alt="Slide 8"></div>
+                            <div class="slide"><img src="./src/img/slider/holdcontact.png" alt="Slide 9"></div>
+                            <div class="slide"><img src="./src/img/slider/holdcontact.png" alt="Slide 10"></div>
+                            <div class="slide"><img src="./src/img/slider/holdcontact.png" alt="Slide 7"></div>
+                            <div class="slide"><img src="./src/img/slider/holdcontact.png" alt="Slide 8"></div>
+                            <div class="slide"><img src="./src/img/slider/holdcontact.png" alt="Slide 9"></div>
+                            <div class="slide"><img src="./src/img/slider/holdcontact.png" alt="Slide 10"></div>
+                        </div>
+    
+                    </div>
+                    <div class="controls">
+                        <button id="prev"></button>
+                        <button id="next"></button>
+                    </div>
+                </div>
+                <div class="nav-btn chat-btn">
+                    <img src="./src/img/slider/chat.png" alt="">
+                </div>
+                <div class="nav-btn univer-btn">
+                    <img src="./src/img/slider/gotouniver.png" alt="">
+                </div>
+                <div class="nav-btn">
+                    <img src="./src/img/slider/mail.png" alt="">
+                </div>
+                <div class="nav-btn rating-btn">
+                    <img src="./src/img/slider/achive.png" alt="">
+                </div>
+            </nav>
+        </div>
+    </div>
+  
+    <div class="overlay" id="overlay"></div>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="rating">
+                <div class="rating-title">
+                    Рейтинг игоков
+                </div>
+                <div class="rating-close icon nav-btn" id="rating-close">
+                </div>
+                <div class="tab tab1 active">Недельный</div>
+                <div class="tab tab2">Общий</div>
+                <ul class="rating-inner" id="rating-inner">
+                    <li id="inner-title">
+                        <span class="place">Место</span>
+                        <span class="name">Имя Фамилия</span>
+                        <span class="experience">Опыт</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./src/js/swiper.js"></script>
+    <script type="module" src="./src/js/modal.js"></script>
+    <script  type="module" src="./src/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+.navigation{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.slider-bg{
+    background-image: url(../img/slider/background-slider.png);
+    background-repeat: no-repeat;
+    width: 540px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+.slider-container {
+    width: 480px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    display: flex;
+    flex: 0 0 12.5%; /* 100% / 8 slides */
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 8px 0px;
+    position: relative;
+    cursor: pointer;
+}
+.slide>img {
+  width: 50px;
+  height: 50px;
+}
+.isFriend::before{
+    background-image: url(../img/slider/iconpeople.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    content: '';
+    position: absolute;
+    z-index: 12;
+    width: 25px;
+    height: 48px;
+    
+}
+.addFriend::after{
+    background-image: url(../img/slider/plus.png);
+    background-repeat: no-repeat;
+    top: 4px;
+    left: 38px;
+    content: '';
+    position: absolute;
+    z-index: 12;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background-size: 22px;
+}
+.controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#prev {
+    background-image: url(../img/slider/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+#next {
+    background-image: url(../img/slider/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.nav-btn {
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-drag: none;
+    opacity: .9;
+}
+
+.nav-btn:active {
+    transform: scale(.95)
+}
+
+.nav-btn>img {
+    -webkit-user-drag: none;
+}
+
+
